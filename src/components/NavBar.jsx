@@ -7,7 +7,7 @@ function NavBar() {
     <div>
       <nav className="NavbarItems">
         <h1 >
-          <Link className="logo" to="/">Sports Pitch</Link>
+          <Link className="logo" to="/">Home Appliances</Link>
         </h1>
         <ul className="nav-menu">
           <li>

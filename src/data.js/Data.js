@@ -2,8 +2,33 @@ import barca from "./barca.jpg";
 import argentina from "./argentina.jpg";
 import nepal from "./NEPAL.jpg";
 import basket from "./basket.jpg";
+import refrigerator from "./refrigerator.jpg"
 
 const jerseyData = [
+  {
+    title: "Refrigerator",
+    image: refrigerator,
+    desc: "",
+    price: "30000",
+  },
+  {
+    title: "Champion",
+    image: argentina,
+    desc: "World Chapions kit",
+    price: "7000",
+  },
+  {
+    title: "Nepal Cricket kit",
+    image: nepal,
+    desc: "Support our Nation at Asia Cup.",
+    price: "4000",
+  },
+  {
+    title: "Basketball kit",
+    image: basket,
+    desc: "Grab a basketball kit",
+    price: "1000",
+  },
   {
     title: "Barca kit",
     image: barca,

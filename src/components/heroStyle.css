@@ -5,7 +5,12 @@
   margin-left: 12px;
   flex-wrap: wrap;
   position: relative;
-  top: 120px;
+  top: 90px;
+  background-color: rgb(201, 233, 233);
+}
+
+img{
+  height: 70%;
 }
 
 .h {
@@ -14,16 +19,19 @@
   margin-left: 20px;
   height: 100%;
 }
-.card{
+.card {
   height: 470px;
 }
 
 .heroTitle {
-    position: relative;
-    top: 120px;
+  position: relative;
+  top: 90px;
   text-align: center;
-  color: rgb(150, 180, 21);
-  font-family: cursive;
+  color: rgb(21, 180, 116);
+  font-family: sans-serif;
+  background-color: rgb(32, 20, 66);
+  padding: 0;
+  margin: 0;
 }
 
 .cardfoot {
