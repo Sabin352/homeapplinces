@@ -1,32 +1,32 @@
-import worldcup from "./worldcip.jpg"
-import shoe from "./shoe.jpg"
-import glove from "./glove.jpg"
-import traning from "./training.jpg"
+import tv from "./tv.jpg";
+import solar from "./solar.jpg";
+import induction from "./induction.jpg";
+import fan from "./fan.jpg";
 
 const jerseyData = [
   {
-    title: "Football Shoe",
-    image: shoe,
-    desc: "Get sports shoes at 10% Off",
-    price: "2500",
+    title: "TV",
+    image: tv,
+    desc: "",
+    price: "40000",
   },
   {
-    title: "Cricket Gloves",
-    image: glove,
-    desc: "Get gloves at 10% Off",
-    price: "700",
+    title: "Solar Heater",
+    image: solar,
+    desc: "",
+    price: "60000",
   },
   {
-    title: "World Cup Trophy",
-    image: worldcup,
-    desc: "Get Trophies at 10% Off",
-    price: "2000",
+    title: "Induction Stove",
+    image: induction,
+    desc: "",
+    price: "7000",
   },
   {
-    title: "Traning Kit",
-    image: traning,
-    desc: "Get comfortable training kit",
-    price: "1500",
+    title: "Fan",
+    image: fan,
+    desc: "",
+    price: "5500",
   },
 ];
 export default jerseyData;

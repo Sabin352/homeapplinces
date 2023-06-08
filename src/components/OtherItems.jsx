@@ -5,7 +5,7 @@ import otherData from "../data.js/otherData"
 const Hero = () => {
   return (
     <>
-      <h2 className="heroTitle">Other Sporting Items</h2>
+      <h2 className="heroTitle">Our Best Sellings</h2>
       <div className="hero">
         {otherData.map((other, key) => {
           return (

@@ -1,8 +1,11 @@
-import barca from "./barca.jpg";
-import argentina from "./argentina.jpg";
-import nepal from "./NEPAL.jpg";
-import basket from "./basket.jpg";
-import refrigerator from "./refrigerator.jpg"
+import washer from "./washer.jpg";
+import refrigerator from "./refrigerator.jpg";
+import blender from "./blender.jpg";
+import toaster from "./toaster.jpg";
+import cooker from "./cooker.jpg";
+import air from "./airconditioner.jpg";
+import coffe from "./coffe.jpg";
+import iron from "./iron.jpg";
 
 const jerseyData = [
   {
@@ -12,46 +15,46 @@ const jerseyData = [
     price: "30000",
   },
   {
-    title: "Champion",
-    image: argentina,
-    desc: "World Chapions kit",
-    price: "7000",
+    title: "Blender",
+    image: blender,
+    desc: "",
+    price: "3000",
   },
   {
-    title: "Nepal Cricket kit",
-    image: nepal,
-    desc: "Support our Nation at Asia Cup.",
-    price: "4000",
+    title: "Toaster",
+    image: toaster,
+    desc: "",
+    price: "2500",
   },
   {
-    title: "Basketball kit",
-    image: basket,
-    desc: "Grab a basketball kit",
-    price: "1000",
+    title: "Rice Cooker",
+    image: cooker,
+    desc: "",
+    price: "2999",
   },
   {
-    title: "Barca kit",
-    image: barca,
-    desc: "Barcelona 2022/2023 Home kit.",
-    price: "1000",
+    title: "Air Conditioner",
+    image: air,
+    desc: "",
+    price: "40000",
   },
   {
-    title: "Champion",
-    image: argentina,
-    desc: "World Chapions kit",
-    price: "7000",
+    title: "Washing Machine",
+    image: washer,
+    desc: "",
+    price: "51000",
   },
   {
-    title: "Nepal Cricket kit",
-    image: nepal,
-    desc: "Support our Nation at Asia Cup.",
-    price: "4000",
+    title: "Coffee Maker",
+    image: coffe,
+    desc: "",
+    price: "8000",
   },
   {
-    title: "Basketball kit",
-    image: basket,
-    desc: "Grab a basketball kit",
-    price: "1000",
+    title: "Iron",
+    image: iron,
+    desc: "",
+    price: "3000",
   },
 ];
 export default jerseyData;
