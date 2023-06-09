@@ -6,40 +6,36 @@ function NavBar() {
   return (
     <div>
       <nav className="NavbarItems">
-        <h1 >
-          <Link className="logo" to="/">Home Appliances</Link>
+        <h1>
+          <Link className="logo" to="/">
+            Home Appliances
+          </Link>
         </h1>
         <ul className="nav-menu">
           <li>
             <Link className="nav-links" to="/">
-              <i className="fa-solid fa-house"></i>
               Home
             </Link>
           </li>
           <li>
-            <Link className="nav-links">
-              <i className="fa-solid fa-circle-info"></i>
-              About
-            </Link>
+            <Link className="nav-links">About</Link>
           </li>
           <li>
-            <Link className="nav-links">
-              <i className="fa-solid fa-address-book"></i>
+            <Link to="/contact" className="nav-links">
               Contact
             </Link>
           </li>
           <li>
-            <Link className="nav-links">
-              <i className="fa-solid fa-cart-shopping"></i>
-              Cart Items
-            </Link>
+            <Link className="nav-links">Cart Items</Link>
           </li>
         </ul>
         <div className="button">
-          {/* <button>Sign Up</button>
-          <button className="btn-si">Sign In</button> */}
-          <Link className="btn">Sign Up</Link>
-          <Link className="btn btn-si">Sign In</Link>
+          <Link to="/signup" className="btn">
+            Sign Up
+          </Link>
+          <Link to="/signin" className="btn btn-si">
+            Sign In
+          </Link>
         </div>
       </nav>
     </div>

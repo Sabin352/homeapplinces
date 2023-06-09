@@ -1,0 +1,48 @@
+.cnt {
+  background-color: rgb(137, 108, 108);
+  height: 120vh;
+}
+.container {
+  border-radius: 45px;
+  margin: 0.01rem 6rem;
+  color: #2a2a2a;
+  position: relative;
+  top: 120px;
+  margin-right: 300px;
+  width: 800px;
+  font-family: cursive;
+  background-color: aquamarine;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
+h1 {
+  text-align: center;
+  font-family: cursive;
+}
+
+.container form {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: auto;
+}
+
+.container input {
+  height: 3rem;
+  width: 400px;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border-radius: 3rem;
+  border: 1px solid #2a2a2a;
+}
+
+.container textarea {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 3rem;
+  border: 1px solid #2a2a2a;
+}
+
+.container button {
+  display: inline;
+}
