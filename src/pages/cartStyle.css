@@ -1,0 +1,22 @@
+.heroo {
+  position: relative;
+  top: 90px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #4d7a9a;
+}
+
+.he {
+    margin-top: 20px;
+  display: flex;
+  width: 400px;
+  /* background-color: red; */
+  margin-bottom: 70px;
+}
+
+.img {
+  height: 170px;
+  width: 180px;
+}

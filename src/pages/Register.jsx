@@ -1,53 +1,76 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./signStyle.css";
+import "./register.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const Register = () => {
-  const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
-  const [name, setName] = useState("");
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(email);
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    password: "",
+    reEnterPassword: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUser({
+      ...user,
+      [name]: value,
+    });
+  };
+
+  const register = () => {
+    const { name, email, password, reEnterPassword } = user;
+    if (name && email && password && password === reEnterPassword) {
+      axios.post("http://localhost:8000/register", user).then((res) => {
+        alert(res.data.message);
+        navigate("/signin");
+      });
+    } else {
+      alert("invlid input");
+    }
   };
 
   return (
-    <div className="cont">
-      <div className="auth-form-container">
-        <h2>Register</h2>
-        <form className="register-form" onSubmit={handleSubmit}>
-          <label htmlFor="name">Full name</label>
-          <input
-            value={name}
-            name="name"
-            onChange={(e) => setName(e.target.value)}
-            id="name"
-            placeholder="full Name"
-          />
-          <label htmlFor="email">email</label>
-          <input
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            type="email"
-            placeholder="youremail@gmail.com"
-            id="email"
-            name="email"
-          />
-          <label htmlFor="password">password</label>
-          <input
-            value={pass}
-            onChange={(e) => setPass(e.target.value)}
-            type="password"
-            placeholder="********"
-            id="password"
-            name="password"
-          />
-          <button type="submit">Log In</button>
-        </form>
-        <Link to="/signin" className="switch">
-          Already have an account? Login here.
-        </Link>
+    <div className="register">
+      {console.log("User", user)}
+      <h1>Register</h1>
+      <input
+        type="text"
+        name="name"
+        value={user.name}
+        placeholder="Your Name"
+        onChange={handleChange}
+      ></input>
+      <input
+        type="text"
+        name="email"
+        value={user.email}
+        placeholder="Your Email"
+        onChange={handleChange}
+      ></input>
+      <input
+        type="password"
+        name="password"
+        value={user.password}
+        placeholder="Your Password"
+        onChange={handleChange}
+      ></input>
+      <input
+        type="password"
+        name="reEnterPassword"
+        value={user.reEnterPassword}
+        placeholder="Re-enter Password"
+        onChange={handleChange}
+      ></input>
+      <div className="button" onClick={register}>
+        Register
+      </div>
+      <div>or</div>
+      <div className="button" onClick={() => navigate("/signin")}>
+        Login
       </div>
     </div>
   );
